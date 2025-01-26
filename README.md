@@ -35,3 +35,9 @@ El objetivo es capturar la esencia de cada marca y producto a través de imágen
 ## 📦 **Cómo Usar**
 
 1. **Clona este repositorio**:
+   ```bash
+   git clone https://github.com/Jorgito-cc/MelVisions.git
+---
+## 🌐 **Demo**
+
+Prueba la aplicación en vivo: [melvisions.netlify.app](https://melvisions.netlify.app/)
