@@ -1,61 +1,214 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contacto - MelVisions Fotografía Comercial"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="icons/comunidades.png" />
+    <title>Contacto - MelVisions</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="header__navbar">
+        <div class="container header__container">
+          <div class="header__logo-wrapper">
+            <h1 class="header__logo">
+              <a href="index.html" class="header__logo-link">MelVisions</a>
+            </h1>
+          </div>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/contactanos.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
-  <link rel="icon" href="/icons/comunidades.png">
-  <title>contactanos | MelVisions</title>
-</head>
-<body>
-  <header>
-    <nav id="navbar">
-      <div class="container">
-        <h1 class="logo"><a href="index.html">MelVisions</a></h1>
-        <ul id="main-nav" class="txt-btn">
-          <li><a class="current" href="index.html">Inicio</a></li>
-          <li><a href="contactanos.html">Contactanos</a></li>
-        </ul>
-      </div>
-    </nav>
+          <input
+            type="checkbox"
+            class="header__menu-checkbox"
+            id="menu-toggle"
+          />
+          <label for="menu-toggle" class="header__menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
 
-    <div id="showcase-home">
-      <div class="showcase-banner">
-        <h1 class="cont">¡Gracias por tu interés en MelVisions!</h1>
-        <p class="large">fotografía comercial personalizada</p>
-<!--         <p>Somos una empresa dedicada a crear experiencias visuales únicas y envolventes a través del diseño y la multimedia. .</p>
- -->          
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="index.html" class="header__menu-link">Inicio</a>
+            </li>
+            <li class="header__menu-item">
+              <a
+                href="contactanos.html"
+                class="header__menu-link header__menu-link--active"
+                >Contacto</a
+              >
+            </li>
+          </ul>
         </div>
-    </div>
+      </nav>
+    </header>
 
-  </header>
+    <!-- Hero Section -->
+    <section class="hero hero--home">
+      <div class="hero__content">
+        <h2 class="hero__title">¡Gracias por tu interés en MelVisions!</h2>
+        <p class="hero__subtitle">Fotografía comercial personalizada</p>
+        <p class="hero__description">
+          Estoy aquí para ayudarte a crear las imágenes más impactantes y
+          memorables para tu marca, producto o proyecto especial.
+        </p>
+      </div>
+    </section>
 
-  <form class="form">
-    <h2 class="form__title">Contáctanos</h2>
-    <input type="text" class="form__name input" placeholder="Nombre:">
-    <input type="email" class="form__email input" placeholder="Email:">
-    <textarea class="form__message input" placeholder="Mensaje:"></textarea>
-    <input type="submit" value="Enviar" class="form__submit">
-</form>
+    <!-- Contact Form Section -->
+    <main class="portfolio">
+      <div class="container">
+        <form class="contact-form" id="contactForm">
+          <h2 class="contact-form__title">Contactanos</h2>
 
-  <hr>
-<!-- footer -->
-  <footer id="main-footer">
-    <div class="container">
-      <p class="small">MelVisions-fotografías-nice 2024 &copy;</p>
-      <!-- <div class="social"> -->
-        <ul>
-          <li><a href="https://www.facebook.com/profile.php?id=100087366038981&mibextid=ZbWKwL"  target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="https://x.com/Melkook03?t=htmIv036nsxcJDWpl2yvNg&s=09" target="_blank"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="https://www.instagram.com/mel_art_jk?igsh=MW1rY2E2NzQxZmFneQ=="  target="_blank"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-      <!-- </div> -->
-    </div>
-  </footer>
-</body>
+          <div class="contact-form__group">
+            <label for="name" class="contact-form__label">Nombre:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="contact-form__input"
+              placeholder="Tu nombre completo"
+              required
+            />
+          </div>
+
+          <div class="contact-form__group">
+            <label for="email" class="contact-form__label"
+              >Correo Electrónico:</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="contact-form__input"
+              placeholder="tu.email@ejemplo.com"
+              required
+            />
+          </div>
+
+          <div class="contact-form__group">
+            <label for="subject" class="contact-form__label">Asunto:</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              class="contact-form__input"
+              placeholder="Asunto de tu mensaje"
+              required
+            />
+          </div>
+
+          <div class="contact-form__group">
+            <label for="message" class="contact-form__label">Mensaje:</label>
+            <textarea
+              id="message"
+              name="message"
+              class="contact-form__textarea"
+              placeholder="Cuéntanos más sobre tu proyecto fotográfico..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="contact-form__submit">
+            Enviar Mensaje
+          </button>
+        </form>
+
+        <hr />
+
+        <!-- Contact Information -->
+        <section class="contact-info">
+          <h3 class="contact-info__title">Otros Canales de Contacto</h3>
+          <div class="contact-info__channels">
+            <div class="contact-info__channel">
+              <i class="contact-info__icon fas fa-envelope"></i>
+              <p>Envía un correo a: <strong>contacto@melvisions.com</strong></p>
+            </div>
+            <div class="contact-info__channel">
+              <i class="contact-info__icon fas fa-phone"></i>
+              <p>Llama: <strong>+1 (234) 567-8900</strong></p>
+            </div>
+            <div class="contact-info__channel">
+              <i class="contact-info__icon fas fa-map-marker-alt"></i>
+              <p>Ubicación: <strong>Tu Ciudad, País</strong></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <p class="footer__copyright">
+            &copy; 2024 MelVisions - Fotografía Comercial. Todos los derechos
+            reservados.
+          </p>
+          <ul class="footer__socials">
+            <li class="footer__social-item">
+              <a
+                href="https://www.facebook.com/profile.php?id=100087366038981&mibextid=ZbWKwL"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__social-link"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a
+                href="https://x.com/Melkook03?t=htmIv036nsxcJDWpl2yvNg&s=09"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__social-link"
+                aria-label="Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a
+                href="https://www.instagram.com/mel_art_jk?igsh=MW1rY2E2NzQxZmFneQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__social-link"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+      // Handle form submission
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Gracias por tu mensaje. Me pondré en contacto pronto.");
+          this.reset();
+        });
+    </script>
+  </body>
 </html>
